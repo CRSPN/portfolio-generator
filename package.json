@@ -1,0 +1,21 @@
+{
+  "name": "pg",
+  "version": "1.0.0",
+  "description": "pg",
+  "main": "app.js",
+  "scripts": {
+    "test": "tst123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "t"
+  },
+  "keywords": [
+    "t"
+  ],
+  "author": "crspn",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.3.0"
+  }
+}
