@@ -31,9 +31,17 @@ const promptUser = () => {
             }
         },
         {
+            type: 'confirm',
+            name: 'cofirmAbout',
+            message: 'Do you wish to provide some information about yourself stored in the "About" section?',
+            default: true 
+        },
+        {
             type: 'input',
             name: 'about',
-            message: 'Provide some information about yourself:'
+            message: 'Provide some information about yourself:',
+            when: ({ confirmAbout }) => confirmAbout
+            
         }
     ]);
 };
@@ -56,7 +64,7 @@ const promptProject = portfolioData => {
             message: 'What is the name of your project? (Required)',
             validate: nameInput => {
                 if (nameInput === "") {
-                    console.log('Please enter your project name `@U@`');
+                    console.log('Please enter your name `@U@`');
                     return false;
                 } else {
                     return true;                    
